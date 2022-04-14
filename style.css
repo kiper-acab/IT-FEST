@@ -1,0 +1,280 @@
+
+*{	
+	margin:0;
+	padding: 0;
+	box-sizing: none;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	background-image: url(images/body.jpg);
+	background-attachment: fixed;
+	animation: animate2 3s ease infinite;
+}
+
+@keyframes animate2{
+	0%{
+		background-position: 50%
+	}
+
+
+	50%{
+		background-position: 51%
+	}
+
+
+	100%{
+		background-position: 50%
+	}
+}
+
+.header{
+	background-color: #171A41;
+
+}
+
+.header>article{
+	display: flex;
+	justify-content: space-around;
+}
+
+.header>article>article{
+	display: flex;
+
+}
+
+.header>article>article>a{
+	margin-top: 63px;
+	align-items: center;
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	margin-right: 19px;
+	padding: 0 10px;
+}
+
+
+/*Создаём ховер на ссылки*/
+.header>article>article>a:hover{
+	color:#FA4DFF;
+	transition: linear .2s
+}
+
+.header>article>article>img{
+	width: 200px;
+	height: 150px;
+	margin-right: 100px;
+}
+
+.info{
+	min-height: 70vh;
+}
+
+.info>h1{
+	margin-top: 40px;
+	text-align: center;
+}
+
+.info>article{
+	display: flex;
+	justify-content: center;
+}
+
+/*Центрируем, делаем обводку для h2*/
+.info>article>h2{
+	margin-top: 30px;
+	width: 300px;
+	border: solid 20px black ;
+	border-image: url("images/border.png") 200;
+	color: #171A41;
+	text-align: center;
+}
+
+.info_game{
+	margin:0 15px;
+	margin-top: 100px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.p:hover{
+	box-shadow: 7px -4px 31px 2px rgba(34, 60, 80, 0.2);
+}
+
+.info_game>p{
+	margin: 0 15px;
+	color: #171A41;
+	font-size: 20px;
+	max-width: 450px;
+	animation: animate 3s ease infinite;
+	border-radius: 4%;
+	padding: 50px;
+	text-align: center;
+	}
+.info_game>p:nth-child(1){
+	background-image: url(images/back.png);
+}
+
+.info_game>p:nth-child(2){
+	background-image: url(images/back2.png);
+}
+
+.info_game>p:nth-child(3){
+	background-image: url(images/back3.png); 
+}
+
+@keyframes animate{
+	0%{
+		 background-position: 50%;
+	}
+	50%{
+		background-position: 51%;
+	}
+
+	100%{
+		background-position: 50%;
+	}
+}
+
+.photo>h1{
+	text-align: center;
+	font-size: 35px;
+	padding-top: 100px;
+}
+
+.photo2{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2em;
+}
+
+.photo2>article{
+	margin-top: 40px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.photo2>article>p{
+	position: absolute;
+	bottom: 10px;
+	color: white;
+}
+
+.photo2>article>a>img{
+	border: solid 1px black;
+	border-radius:5%;
+	height: 300px;
+	width: 400px;
+	object-fit: cover;
+	filter: blur(1px);
+}
+
+.mods>h1{
+	text-align: center;
+	margin-top: 100px;
+	font-size: 35px;
+}
+
+.mods2{
+	padding: 0 2em;
+	margin-top: 50px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2em;
+}
+
+.mods2>article{
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .7);
+	border-radius: 3%;
+	padding: 15px 5px;
+}
+
+.mods2>article>img{
+	width: 400px;
+	height: 250px;
+}
+
+.mods2>article>h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.mods2>article>p{
+	margin-top:10px;
+}
+
+.mods2>article>a{
+	color: white;
+	text-decoration: none;
+	margin-top: 10px;
+	background-color: rgba(84, 2, 122, .5);
+	padding: 10px;
+	border-radius: 5%;
+}
+
+
+
+.reyt>h1{
+	margin-top: 70px;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.footer{
+	padding: 20px; 
+	margin-top: 100px;
+	background-color: #171A41; 
+	color:white;
+}
+
+.footer>article>h1{
+	text-align: center;
+	font-size: 15px;
+}
+
+.a{
+	display: flex;
+	justify-content: space-around;
+}
+
+.a a{
+	margin-right:30px;
+	text-decoration: none;
+	color: white;
+}
+
+.a a:hover{
+	color:#FA4DFF; 
+	transition: linear .4s
+}
+
+.a>article{
+	margin-top:30px;
+}
+
+.a1{
+	font-size: 30px;
+}
+
+.a2>a{
+	background-color: rgb(84, 2, 122);
+	font-size: 20px;
+	padding: 12px 5px;
+	border-radius: 5%;
+}
+
+.a>article:first-child{
+	margin-top: 65px;
+}
+
+.a>article:last-child{
+	margin-top: 65px;
+}
